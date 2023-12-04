@@ -2,7 +2,7 @@ function loadPDF() {
     const pdfName = document.getElementById('pdfName').value;
     const pdfViewer = document.getElementById('pdfViewer');
 
-    const loadingTask = pdfjsLib.getDocument({ url: `path/to/pdfs/${pdfName}.pdf` });
+    const loadingTask = pdfjsLib.getDocument({ url: `${pdfName}.pdf` });
 
     loadingTask.promise.then(function (pdfDoc) {
         const pdfViewer = document.getElementById('pdfViewer');
